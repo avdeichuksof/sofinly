@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f9f1e2;
+    --bgMenuBg: #f7f1e6;
+    --darkBlue: #1B3A5C;
+    --blue: #2E6DA4;
+    --green: #94C560;
+    --red: #CA3A2B;
+    --grey: #454545;
+    --lightGrey: #928989;
+    --white: #F8F8F8;
+    --font: 'Caveat', cursive;
+    --titles: 'Rock Salt', cursive;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'navbar'
+        'main'
+        /* 'footer' */
+    ;
+    grid-template-rows: auto 1fr ;
+    min-height: 100dvh;
+    background-color: var(--bg)
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.main {
+    grid-area: main;
+
+}
+
+/* .footer {
+    grid-area: footer;
+} */

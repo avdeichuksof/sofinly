@@ -1,0 +1,10 @@
+.burger-icon {
+    z-index: 15;
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .burger-icon {
+        display: none;
+    }
+}
