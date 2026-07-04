@@ -9,8 +9,7 @@
     box-shadow: 0 3px 4px rgba(0,0,0,0.1);
     font-family: var(--font);
     padding: 0.5rem;
-    margin: 1.5rem auto;
-
+    margin: 2rem auto;
 }
 
 .balance-card-title {
@@ -30,10 +29,11 @@
 
 .balance-card-trend {
     position: absolute;
+    background-color: var(--greenHL);
     top: -18px;
     right: -60px;
     font-size: 1rem;
-    color: var(--green);
+    color: var(--grey);
     white-space: nowrap;
     font-weight: 600;
     transform: rotate(8deg);
@@ -44,4 +44,24 @@
     top: 10px;
     right: -40px;
     pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    #balance-card {
+        width: 350px;
+        height: 200px;
+    }
+    .balance-card-title {
+        font-size: 2.3rem;
+        padding: .5rem 1rem;
+        /* margin: 1rem 0 0 1rem; */
+    }
+    .balance-card-amount {
+        font-size: 3rem;
+    }
+    .balance-card-trend {
+        font-size: 1.5rem;
+        top: -30px;
+        right: -90px;
+    }
 }

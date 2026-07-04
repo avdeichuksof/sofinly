@@ -1,21 +1,23 @@
 #home {
+    display: flex;
+    flex-direction: column;
     padding: 1rem 2rem;
-    height: 100dvh;
-    /* background-image: 
+    background-image: 
         repeating-linear-gradient(
             to bottom,
             transparent,
-            transparent 41px,
-            var(--lightGrey) 41px,
-            var(--lightGrey) 42px
+            transparent 39px,
+            var(--lightGrey) 39px,
+            var(--lightGrey) 40px
         ),
         linear-gradient(
             to right,
-            transparent 75px,
-            #2e6da492 75px,
-            #2e6da492 76px,
-            transparent 76px
-        ) */
+            transparent 110px,
+            #2e6da492 110px,
+            #2e6da492 111px,
+            transparent 111px
+        );
+    min-height: 100%;
 }
 
 .home-title {
@@ -32,16 +34,15 @@
 .home-data{
     display: flex;
     flex-direction: column;
-    height: 600px;
-    justify-content: space-evenly;
+    height: 650px;
+    margin: auto 0;
+    justify-content: space-around;
 }
 
 /* MEDIA */
 @media (min-width: 768px) {
     #home {
         padding: 3rem;
-        height: 100dvh;
-        overflow: hidden;
         background-image: 
         repeating-linear-gradient(
             to bottom,
@@ -49,14 +50,15 @@
             transparent 39px,
             var(--lightGrey) 39px,
             var(--lightGrey) 40px
+            
         ),
         linear-gradient(
             to right,
-            transparent 100px,
-            #2e6da492 100px,
-            #2e6da492 101px,
-            transparent 101px
-        )
+            transparent 110px,
+            #2e6da492 110px,
+            #2e6da492 111px,
+            transparent 111px
+        );
     }
 
     .home-title {
@@ -69,5 +71,20 @@
         display: flex;
         align-items: center;
         justify-content: space-between
+    }
+    .home-data{
+        height: 800px;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-data {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        height: fit-content;
     }
 }

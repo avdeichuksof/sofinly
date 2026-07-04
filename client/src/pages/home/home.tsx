@@ -12,7 +12,7 @@ export default function Home({user}: {user: string}) {
         <div id="home">
             <div className="welcome">
                 <h1 className="home-title">Hola, {user}</h1>
-            <p className='home-date'>{day} de {month} • {year}</p>
+                <p className='home-date'>{day} de {month} • {year}</p>
             </div>
             <div className="home-data">
                 <BalanceCard />
